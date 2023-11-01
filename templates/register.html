@@ -7,13 +7,19 @@
     <title>RealRussia-Регистрация</title>
 </head>
 <body>
-    <img src="../static/img/logo.png" alt="logo">
-    <form action="/reg" class="register" method="post">
-        <input type="nickname" name="nickname" id="nickname" placeholder="никнейм">
-        <input type="email" name="email" id="email" placeholder="email" required>
-        <input type="number" name="number" id="number" placeholder="номер телефона" required>
-        <input type="password" name="password" id="password" placeholder="пароль" required>
-        <input type="submit"></button>
+    <img class="logo" src="../static/img/logo.png" alt="logo">
+
+    <form action="/register" method="post">
+        <table class="register-table">
+            <tr><td><input type="nickname" name="nickname" id="nickname" placeholder="никнейм" minlength="3" maxlength="20"></td></tr>
+            <tr><td><input type="number" name="number" id="number" placeholder="номер телефона" required></td></tr>
+            <tr><td><input type="email" name="email" id="email" placeholder="email" required></td></tr>
+            <tr><td><input type="password" name="password" id="password" placeholder="пароль" minlength="6" required></td></tr> 
+            <tr><td><button type="submit">Зарегистрироваться</button></td></tr>      
+               
+        </table>
     </form>
+    <button><a href="/">Назад</a></button>
+    
 </body>
 </html>

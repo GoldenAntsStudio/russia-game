@@ -3,12 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>TT</title>
+    <link rel="stylesheet" href="../static/css/style.css">
 </head>
 <body>
     {% block content %}
-    <p>{{ nickname }}</p>
+    <p class="nickname">{{ nickname }}</p>
+    <img class="avatar" src="../static/img/blackavatar.jpg" alt="">
+    <p>{{ rub }} РУБ</p>
+    <p>{{ usd }} Долларов</p>
+    <p>{{ eur }} Евро</p>
 
+    <a href="/">Назад</a>
     {% endblock %}
 </body>
 </html>
